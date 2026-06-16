@@ -1,0 +1,28 @@
+{
+  "pipeline_run_id": "build-12345",
+  "status": "FAILED",
+  "timestamp": "2026-06-16T14:30:00Z",
+  "failed_job": "test-unit",
+  "branch": "main",
+  "commit_sha": "abc123def456",
+  "commit_message": "feat: Add new calculator function",
+  "author": "developer@example.com",
+  "repository": {
+    "owner": "bdlozano",
+    "name": "pipeline_alm_IA",
+    "url": "https://github.com/bdlozano/pipeline_alm_IA"
+  },
+  "logs": {
+    "stderr": "FAILED tests/test_calculator.py::test_add - AssertionError: expected 5 to equal 10",
+    "stdout": "===== test session starts =====\nPlatform: linux -- Python 3.9.0\nRootdir: /home/user/repo\nCollected 5 items\n\ntests/test_calculator.py::test_add FAILED\n",
+    "duration_ms": 45000
+  },
+  "ci_config": {
+    "workflow": "tests.yml",
+    "triggered_by": "push"
+  },
+  "artifacts": {
+    "logs_url": "https://github.com/bdlozano/pipeline_alm_IA/actions/runs/12345",
+    "coverage_report": null
+  }
+}
